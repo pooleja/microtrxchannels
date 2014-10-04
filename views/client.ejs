@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link type='css' rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+  </head>
+  <body>
+  	<div class="container">
+		<nav class="navbar navbar-default" role="navigation">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">MicroTrxChannels</a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		    	<li class="active"><a href="#">Client</a></li>
+			</ul>
+
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Testnet Wallet</h3>
+		  </div>
+		  <div class="panel-body">
+
+		    <form role="form" id="create-key-form">
+				<div class="form-group">
+				  <label>"Secret" Password for Brain Wallet</label>
+				  <input type="text" class="form-control" rows="3" id="secret-key-password" value="my secret"></input>
+				</div>
+
+				<h5>Address</h5>
+				<div id="generated-address" class="well"></div>
+
+				<h5>QR Code</h5>
+				<div id="qr-code"></div>
+
+				<h5>Balance (Unconfirmed + Confirmed)</h5>
+				<div id="balance" class="well"></div>
+
+				<button type="submit" class="btn btn-default" >Initialize</button>
+			</form>
+			<br />
+
+
+		  </div>
+		</div>
+
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Micropayment Channel</h3>
+		  </div>
+		  <div class="panel-body">
+
+		  	<h5>Status</h5>
+			<div id="channel-status" class="well">CLOSED</div>
+
+		    <form role="form" id="create-key-form2">
+				<div class="form-group">
+				  <label>Channel Value Amount (BTC)</label>
+				  <input type="text" class="form-control" id="initial-payment-amount" value=".001" />
+				</div>
+				<div class="form-group">
+				  <label>Micro Payment Amount (BTC)</label>
+				  <input type="text" class="form-control" id="micro-payment-amount" value=".00001" disabled='disabled'/>
+				</div>
+				<div class="form-group">
+				  <label>Sent to Server (BTC)</label>
+				  <input type="text" class="form-control" id="sent-payment-amount" value="0" disabled='disabled'/>
+				</div>
+				<button id="open-channel-button" type="button" class="btn btn-default" >Open Channel</button>
+				<button id="pay-channel-button" type="button" class="btn btn-default" disabled="disabled" >Pay</button>
+				<button id="close-channel-button" type="button" class="btn btn-default" disabled="disabled ">Close Channel</button>
+			</form>
+			<br />
+
+
+		  </div>
+		</div>
+
+
+
+
+	</div>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="javascripts/jquery-2.1.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="javascripts/bootstrap.min.js"></script>
+
+
+    <script src="javascripts/bundle.js"></script>
+    <script src="javascripts/jquery.qrcode.min.js"></script>
+    <script src="javascripts/client.client.js"></script>
+
+  </body>
+</html>

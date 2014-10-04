@@ -1,0 +1,21 @@
+{
+  "name": "microtrxchannels",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "~4.2.0",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "ejs": "~0.8.5",
+    "bitcore": "~0.1.36",
+    "mongoose": "~3.8.16",
+    "buffertools": "=2.1.2",
+    "request": "~2.44.0"
+  }
+}
