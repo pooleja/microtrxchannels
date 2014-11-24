@@ -1,4 +1,3 @@
-// The Address model
 
 var mongoose = require('mongoose');
 
