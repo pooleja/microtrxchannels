@@ -26,4 +26,4 @@ build/Release
 node_modules
 
 # Deployment specific config files
-config/*
+# config/*

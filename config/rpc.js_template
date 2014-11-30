@@ -1,0 +1,7 @@
+module.exports = {
+  protocol: 'http',
+  user: 'your_user',
+  pass: 'your_password',
+  host: 'localhost',
+  port: '18332',
+};
