@@ -12,7 +12,7 @@ https://www.youtube.com/watch?v=HmYP-7pcdhM&spfreload=10
 2. Run `npm install`
 3. Create config by copying `*_template` files to their respective `*.js` files and adjust config
 4. Run `bin/www` to start application (use `DEBUG=microtrxchannels bin/www` or `DEBUG=* bin/www` for different levels of debug output)
-5. Point browser to http://localhost:3000/client
+5. Point browser to [http://localhost:3000/client](http://localhost:3000/client)
 
 ## Requirements
 
@@ -26,4 +26,4 @@ https://www.youtube.com/watch?v=HmYP-7pcdhM&spfreload=10
     rpcpassword=your_pass
     ```
 2. [node.js](http://nodejs.org/)
-3. [MongoDB](www.mongodb.org)
+3. [MongoDB](http://www.mongodb.org)
