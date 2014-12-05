@@ -11,8 +11,9 @@ https://www.youtube.com/watch?v=HmYP-7pcdhM&spfreload=10
 1. Clone repository and change to `microtrxchannels` directory
 2. Run `npm install`
 3. Create config by copying `*_template` files to their respective `*.js` files and adjust config
-4. Run `bin/www` to start application (use `DEBUG=microtrxchannels bin/www` or `DEBUG=* bin/www` for different levels of debug output)
-5. Point browser to [http://localhost:3000/client](http://localhost:3000/client)
+4. Please note TIMELOCK_PREFER in config.js - the default TTL for a channel, set at 10mins(600secs).
+5. Run `bin/www` to start application (use `DEBUG=microtrxchannels bin/www` or `DEBUG=* bin/www` for different levels of debug output)
+6. Point browser to [http://localhost:3000/client](http://localhost:3000/client)
 
 ## Requirements
 

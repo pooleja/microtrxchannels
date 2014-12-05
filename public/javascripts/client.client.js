@@ -421,7 +421,7 @@ function closeChannel(){
 
 $( document ).ready(function() {
 
-	$( "#create-key-form" ).submit(function( event ) {
+	$( "#create-key-form" ).submit(function(event) {
 		var secret = $("#secret-key-password").val();
 
 		if(!secret){
@@ -455,7 +455,7 @@ $( document ).ready(function() {
 		window.setInterval(updateBalance, 1000);
 	});
 
-	$( "#open-channel-button" ).click(function() {
+	$( "#open-channel-button" ).click(function(event) {
 		console.log("Opening Channel");
 		event.preventDefault();
 
