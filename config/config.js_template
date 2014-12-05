@@ -4,3 +4,4 @@ exports.SECRET = 'this_is_secret';
 exports.VERSION = '0.0.1';
 exports.NETWORK = bitcore.networks['testnet'];
 exports.WALLET_FILE_NAME = "microtrx.wallet";
+exports.TIMELOCK_PREFER = 600;
